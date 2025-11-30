@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/9510a515c63049cbbb4eb7d9429b28c2/artifacts
+end_time: 1764544044494
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 9510a515c63049cbbb4eb7d9429b28c2
+run_name: upset-gull-389
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764544044372
+status: 3
+tags: []
+user_id: lseil

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/c0e15e7dc2b840f5b359ecd006dc0a80/artifacts
+end_time: 1764541042585
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: c0e15e7dc2b840f5b359ecd006dc0a80
+run_name: grandiose-wolf-454
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764541042436
+status: 3
+tags: []
+user_id: lseil

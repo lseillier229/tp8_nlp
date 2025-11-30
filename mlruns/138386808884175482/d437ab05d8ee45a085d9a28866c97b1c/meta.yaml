@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/d437ab05d8ee45a085d9a28866c97b1c/artifacts
+end_time: 1764541411493
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: d437ab05d8ee45a085d9a28866c97b1c
+run_name: rogue-shoat-759
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764541411337
+status: 3
+tags: []
+user_id: lseil

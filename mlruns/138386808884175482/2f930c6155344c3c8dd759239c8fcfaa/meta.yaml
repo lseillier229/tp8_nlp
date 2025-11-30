@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/2f930c6155344c3c8dd759239c8fcfaa/artifacts
+end_time: 1764541169053
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 2f930c6155344c3c8dd759239c8fcfaa
+run_name: mercurial-steed-552
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764541168904
+status: 3
+tags: []
+user_id: lseil

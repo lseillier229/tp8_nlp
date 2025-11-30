@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/b691852440194a3790a440bfa4b83fd3/artifacts
+end_time: 1764543542801
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: b691852440194a3790a440bfa4b83fd3
+run_name: calm-mouse-8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764543542651
+status: 3
+tags: []
+user_id: lseil

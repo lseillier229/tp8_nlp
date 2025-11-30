@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/4a0b6be1dd384a15bab6e163b5014366/artifacts
+end_time: 1764539601273
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 4a0b6be1dd384a15bab6e163b5014366
+run_name: classy-gnu-433
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764539601110
+status: 3
+tags: []
+user_id: lseil

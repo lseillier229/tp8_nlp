@@ -23,36 +23,72 @@ def get_model(config):
 
 
 class RAG:
-    def __init__(self, chunk_size=256):
+    def __init__(
+        self,
+        chunk_size: int = 256,
+        chunk_overlap: int = 0,
+        top_k: int = 5,
+        embed_model: str = "BAAI/bge-base-en-v1.5",
+    ):
+        print(f"[DEBUG RAG.__init__] chunk_size={chunk_size}, "
+              f"chunk_overlap={chunk_overlap}, top_k={top_k}, embed_model={embed_model}")
+
         self._chunk_size = chunk_size
+        self._chunk_overlap = chunk_overlap
+        self._top_k = top_k
+        self._embed_model = embed_model
+
         self._embedder = None
         self._loaded_files = set()
         self._texts = []
         self._chunks = []
         self._corpus_embedding = None
         self._client = CLIENT
+        self._file_texts = []          
+        self._file_embeddings = None   
+
+        self._chunks = []              
+        self._corpus_embedding = None  
+
+        self._chunk_file_ids = []      
+
+        self._loaded_files = set()
 
     def load_files(self, filenames):
-        texts = []
+        new_file_texts = []
+
         for filename in filenames:
             if filename in self._loaded_files:
                 continue
 
             with open(filename, encoding="utf-8") as f:
-                texts.append(f.read())
-                self._loaded_files.add(filename)
+                text = f.read()
 
-        
-        self._texts += texts
+            self._loaded_files.add(filename)
 
-        chunks_added = self._compute_chunks(texts)
-        self._chunks += chunks_added
+            file_id = len(self._file_texts)
+            self._file_texts.append(text)
+            new_file_texts.append(text)
 
-        new_embedding = self.embed_corpus(chunks_added)
-        if self._corpus_embedding is not None:
-            self._corpus_embedding = np.vstack([self._corpus_embedding, new_embedding])
-        else:
-            self._corpus_embedding = new_embedding
+            film_chunks = chunk_markdown(
+                text,
+                chunk_size=self._chunk_size,
+                chunk_overlap=self._chunk_overlap,
+            )
+
+            self._chunks.extend(film_chunks)
+            self._chunk_file_ids.extend([file_id] * len(film_chunks))
+
+        if self._file_texts:
+            self._file_embeddings = self.embed_corpus(self._file_texts)
+        if self._chunks:
+            self._corpus_embedding = self.embed_corpus(self._chunks)
+
+    def _normalize_embeddings(self, embs):
+        embs = np.array(embs, dtype=np.float32)
+        norms = np.linalg.norm(embs, axis=1, keepdims=True) + 1e-12
+        return embs / norms
+
 
     def get_corpus_embedding(self):
         return self._corpus_embedding
@@ -61,23 +97,31 @@ class RAG:
         return self._chunks
 
     def embed_questions(self, questions):
-        embedder = self.get_embedder()
-        return embedder.encode(questions)
+        return self.embed_texts(questions)
 
     def _compute_chunks(self, texts):
         return sum(
-            (chunk_markdown(txt, chunk_size=self._chunk_size) for txt in texts),
+            (
+                chunk_markdown(
+                    txt,
+                    chunk_size=self._chunk_size,
+                    chunk_overlap=self._chunk_overlap,
+                )
+                for txt in texts
+            ),
             [],
         )
-
-    def embed_corpus(self, chunks):
+    def embed_texts(self, texts):
         embedder = self.get_embedder()
-        return embedder.encode(chunks)
+        embs = embedder.encode(texts)
+        return self._normalize_embeddings(embs)
+    def embed_corpus(self, chunks):
+        return self.embed_texts(chunks)
 
     def get_embedder(self):
         if not self._embedder:
             self._embedder = FlagModel(
-                'BAAI/bge-base-en-v1.5',
+                self._embed_model,
                 query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
                 use_fp16=True,
             )
@@ -105,11 +149,38 @@ If the answer is not in the context information, reply \"I cannot answer that qu
 Query: {query}
 Answer:"""
 
-    def _get_context(self, query):
-        query_embedding = self.embed_questions([query])
-        sim_scores = query_embedding @ self._corpus_embedding.T
-        indexes = list(np.argsort(sim_scores[0]))[-5:]
-        return [self._chunks[i] for i in indexes]
+    def _get_context(self, query, n_files: int = 3):
+        if self._corpus_embedding is None or self._file_embeddings is None:
+            raise ValueError("Corpus or file embeddings not computed. Call load_files() first.")
+
+        q_emb = self.embed_questions([query])   # (1, d)
+
+        # --- Niveau 1 : retrouver les meilleurs films ---
+        file_scores = q_emb @ self._file_embeddings.T   # (1, F)
+        n_files = min(n_files, self._file_embeddings.shape[0])
+        best_file_idx = np.argsort(file_scores[0])[-n_files:]  # indices de films pertinents
+
+        # --- Niveau 2 : chunks restreints à ces films ---
+        chunk_file_ids = np.array(self._chunk_file_ids)
+        mask = np.isin(chunk_file_ids, best_file_idx)
+        candidate_indices = np.where(mask)[0]
+
+        if candidate_indices.size == 0:
+            # fallback : comportement ancien (sur tout le corpus)
+            sim_scores = q_emb @ self._corpus_embedding.T
+            top_k = min(self._top_k, self._corpus_embedding.shape[0])
+            idx = np.argsort(sim_scores[0])[-top_k:][::-1]
+            return [self._chunks[i] for i in idx]
+
+        candidate_embs = self._corpus_embedding[candidate_indices]  # (C', d)
+        sim_scores = q_emb @ candidate_embs.T
+
+        top_k = min(self._top_k, candidate_embs.shape[0])
+        local_idx = np.argsort(sim_scores[0])[-top_k:][::-1]
+        global_idx = candidate_indices[local_idx]
+
+        return [self._chunks[i] for i in global_idx]
+
     
 
 
@@ -156,16 +227,40 @@ def parse_markdown_sections(md_text: str) -> list[dict[str, str]]:
     return sections
 
 
-def chunk_markdown(md_text: str, chunk_size: int = 128) -> list[dict]:
+def chunk_markdown(
+    md_text: str,
+    chunk_size: int = 128,
+    chunk_overlap: int = 0,
+) -> list[str]:
     parsed_sections = parse_markdown_sections(md_text)
     chunks = []
 
     for section in parsed_sections:
-        tokens = tokenizer.encode(section["content"])
-        token_chunks = [tokens[i:i + chunk_size] for i in range(0, len(tokens), chunk_size) if tokens[i:i + chunk_size]]
+        header = section.get("header", "")
+        content = section["content"]
 
-        for token_chunk in token_chunks:
+        tokens = tokenizer.encode(content)
+        if not tokens:
+            continue
+
+        step = chunk_size - chunk_overlap
+        if step <= 0:
+            step = chunk_size
+
+        for i in range(0, len(tokens), step):
+            token_chunk = tokens[i:i + chunk_size]
+            if not token_chunk:
+                continue
+
             chunk_text = tokenizer.decode(token_chunk)
-            chunks.append(chunk_text)
+
+            if header:
+                full_chunk = f"{header}\n\n{chunk_text}"
+            else:
+                full_chunk = chunk_text
+
+            chunks.append(full_chunk)
 
     return chunks
+
+

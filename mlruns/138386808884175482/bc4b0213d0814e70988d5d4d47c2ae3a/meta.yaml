@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/bc4b0213d0814e70988d5d4d47c2ae3a/artifacts
+end_time: 1764539574797
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: bc4b0213d0814e70988d5d4d47c2ae3a
+run_name: bouncy-fawn-353
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764539574660
+status: 3
+tags: []
+user_id: lseil

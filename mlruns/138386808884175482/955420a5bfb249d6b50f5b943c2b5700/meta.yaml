@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/955420a5bfb249d6b50f5b943c2b5700/artifacts
+end_time: 1764540342800
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 955420a5bfb249d6b50f5b943c2b5700
+run_name: dashing-ram-822
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764540342659
+status: 3
+tags: []
+user_id: lseil

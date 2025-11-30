@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/605426847b334029881261b9ab813d9d/artifacts
+end_time: 1764543079641
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 605426847b334029881261b9ab813d9d
+run_name: wistful-chimp-244
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764543079513
+status: 3
+tags: []
+user_id: lseil

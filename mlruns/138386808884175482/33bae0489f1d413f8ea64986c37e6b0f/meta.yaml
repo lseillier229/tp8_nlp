@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/33bae0489f1d413f8ea64986c37e6b0f/artifacts
+end_time: 1764539411726
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 33bae0489f1d413f8ea64986c37e6b0f
+run_name: legendary-fish-360
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764539411560
+status: 3
+tags: []
+user_id: lseil

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/f400a34d946a4e34bd19e12b67805f9e/artifacts
+end_time: 1764543585668
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: f400a34d946a4e34bd19e12b67805f9e
+run_name: sassy-dove-73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764543585535
+status: 3
+tags: []
+user_id: lseil

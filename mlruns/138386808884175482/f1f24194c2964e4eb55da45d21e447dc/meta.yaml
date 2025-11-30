@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/f1f24194c2964e4eb55da45d21e447dc/artifacts
+end_time: 1764542823313
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: f1f24194c2964e4eb55da45d21e447dc
+run_name: righteous-pug-754
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764542823186
+status: 3
+tags: []
+user_id: lseil

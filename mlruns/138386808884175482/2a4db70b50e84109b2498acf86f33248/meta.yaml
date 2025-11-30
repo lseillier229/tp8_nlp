@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/2a4db70b50e84109b2498acf86f33248/artifacts
+end_time: 1764543381863
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 2a4db70b50e84109b2498acf86f33248
+run_name: polite-flea-26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764543381740
+status: 3
+tags: []
+user_id: lseil

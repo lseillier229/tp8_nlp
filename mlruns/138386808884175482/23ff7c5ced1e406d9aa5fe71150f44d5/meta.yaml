@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/23ff7c5ced1e406d9aa5fe71150f44d5/artifacts
+end_time: 1764540501707
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 23ff7c5ced1e406d9aa5fe71150f44d5
+run_name: gaudy-zebra-397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764540501546
+status: 3
+tags: []
+user_id: lseil

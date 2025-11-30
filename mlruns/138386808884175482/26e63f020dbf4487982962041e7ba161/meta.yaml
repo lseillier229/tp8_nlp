@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/26e63f020dbf4487982962041e7ba161/artifacts
+end_time: 1764539707972
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 26e63f020dbf4487982962041e7ba161
+run_name: redolent-bass-931
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764539707808
+status: 3
+tags: []
+user_id: lseil

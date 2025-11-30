@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/02c0bd15642243378b64515fa72fc80b/artifacts
+end_time: 1764535007321
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 02c0bd15642243378b64515fa72fc80b
+run_name: angry-snail-996
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764535007175
+status: 3
+tags: []
+user_id: lseil

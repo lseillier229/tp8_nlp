@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/fdc73ef8e4ee4a658980fefef83eb1da/artifacts
+end_time: 1764539908621
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: fdc73ef8e4ee4a658980fefef83eb1da
+run_name: inquisitive-duck-443
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764539908476
+status: 3
+tags: []
+user_id: lseil

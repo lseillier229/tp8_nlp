@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/d430cc988e4247fd99a8bc1387fa8a8f/artifacts
+end_time: 1764542629624
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: d430cc988e4247fd99a8bc1387fa8a8f
+run_name: clean-zebra-397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764542629496
+status: 3
+tags: []
+user_id: lseil

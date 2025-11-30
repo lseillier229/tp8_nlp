@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/bd6a7b7468ea49a0999b6dba387569d3/artifacts
+end_time: 1764540185326
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: bd6a7b7468ea49a0999b6dba387569d3
+run_name: traveling-fly-214
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764540185184
+status: 3
+tags: []
+user_id: lseil

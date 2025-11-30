@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/langagenatu/tp8/mlruns/138386808884175482/5fc01bd6b3924f5bbaff89b79c34773d/artifacts
+end_time: 1764500143925
+entry_point_name: ''
+experiment_id: '138386808884175482'
+lifecycle_stage: active
+run_id: 5fc01bd6b3924f5bbaff89b79c34773d
+run_name: vaunted-fish-199
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764500143795
+status: 3
+tags: []
+user_id: lseil
