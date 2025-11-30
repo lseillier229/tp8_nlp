@@ -13,6 +13,7 @@ from src_rag import models
 
 from FlagEmbedding import FlagModel
 
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 CONF = yaml.safe_load(open("config.yml"))
 
 FOLDER = Path("data") / "raw" / "movies" / "wiki"
@@ -23,33 +24,93 @@ DF = pd.read_csv("data/raw/movies/questions.csv", sep=";")
 
 ENCODER = SentenceTransformer('all-MiniLM-L6-v2')
 
-
 def _load_ml_flow(conf):
     mlflow.set_experiment("RAG_Movies_clean")
 
-
 _load_ml_flow(CONF)
+
+def run_comprehensive_evaluation():
+    """Exécute toutes les configurations d'amélioration"""
+    
+    # Configurations de test
+    configurations = [
+        # Baseline
+        {
+            "chunk_size": 256,
+        },
+        # Améliorations de chunking
+        {
+            "chunk_size": 256,
+            "overlap": 50,
+        },
+        {
+            "chunk_size": 512,
+            "overlap": 100,
+        },
+        # Améliorations d'embedding
+        {
+            "chunk_size": 256,
+            "overlap": 50,
+            "embedding_model": "BAAI/bge-large-en-v1.5",
+        },
+        # Améliorations de retrieval
+        {
+            "chunk_size": 256,
+            "overlap": 50,
+            "embedding_model": "BAAI/bge-large-en-v1.5",
+            "use_reranking": True,
+        },
+        {
+            "chunk_size": 256,
+            "overlap": 50,
+            "embedding_model": "BAAI/bge-large-en-v1.5",
+            "use_hybrid": True,
+        },
+        # Configuration optimale
+        {
+            "chunk_size": 256,
+            "overlap": 50,
+            "embedding_model": "BAAI/bge-large-en-v1.5",
+            "use_reranking": True,
+            "use_hybrid": True,
+        }
+    ]
+    
+    results = []
+    for config in configurations:
+        mrr_score = run_evaluate_retrieval({"model": config})
+        results.append({
+            "mrr": mrr_score
+        })
+    
+    # Afficher les résultats
+    results_df = pd.DataFrame(results)
+    print("\n" + "="*50)
+    print("RÉSULTATS COMPARATIFS")
+    print("="*50)
+    print(results_df.sort_values('mrr', ascending=False))
+    
+    return results_df
 
 def run_evaluate_retrieval(config, rag=None):
     rag = rag or models.get_model(config)
-    score = evaluate_retrieval(rag, FILENAMES, DF.dropna())
+    # Utiliser .copy() pour éviter les warnings
+    df_clean = DF.dropna().copy()
+    score = evaluate_retrieval(rag, FILENAMES, df_clean)
 
-    description = str(config["model"])
-    _push_mlflow_result(score, config, description)
+    _push_mlflow_result(score, config)
     
-    return rag
-
+    return score["mrr"]  # Retourner le MRR pour comparaison
 
 def run_evaluate_reply(config, rag=None):
     rag = rag or models.get_model(config)
     indexes = range(2, len(DF), 10)
-    score = evaluate_reply(rag, FILENAMES, DF.iloc[indexes])
+    # Utiliser .copy() pour éviter SettingWithCopyWarning
+    df_subset = DF.iloc[indexes].copy()
+    score = evaluate_reply(rag, FILENAMES, df_subset)
 
-    description = str(config["model"])
-    _push_mlflow_result(score, config, description)
-    
+    _push_mlflow_result(score, config)
     return rag
-
 
 def _push_mlflow_result(score, config, description=None):
     with mlflow.start_run(description=description):
@@ -62,7 +123,6 @@ def _push_mlflow_result(score, config, description=None):
         }
 
         mlflow.log_dict(config_no_key, "config.json")
-
 
 def evaluate_reply(rag, filenames, df):
     rag.load_files(filenames)
@@ -83,55 +143,28 @@ def evaluate_reply(rag, filenames, df):
         "df_result": df[["question", "reply", "expected_reply", "sim", "is_correct"]],
     }
 
-
 def evaluate_retrieval(rag, filenames, df_question):
     rag.load_files(filenames)
     ranks = []
-    for _, row  in df_question.iterrows():
+    for _, row in df_question.iterrows():
         chunks = rag._get_context(row.question)
         try:
             rank = next(i for i, c in enumerate(chunks) if row.text_answering in c)
         except StopIteration:
-            rank = 0
+            rank = len(chunks)  # Pénalité si non trouvé
 
         ranks.append(rank)
         
     df_question["rank"] = ranks
             
-    mrr = np.mean([0 if r == 0 else 1 / r for r in ranks])
+    # MRR calculation - 1/rank, avec rank=0 si non trouvé devient 0
+    mrr = np.mean([0 if r >= len(chunks) else 1 / (r + 1) for r in ranks])
 
     return {
         "mrr": mrr,
         "nb_chunks": len(rag.get_chunks()),
         "df_result": df_question[["question", "text_answering", "rank"]],
     }
-
-
-def calc_acceptable_chunks(chunks, text_to_find):
-    acceptable_chunks = []
-    for answer in text_to_find:
-        chunks_ok = set(i for i, chunk in enumerate(chunks) if answer in chunk)
-        acceptable_chunks.append(chunks_ok)
-
-    return acceptable_chunks
-
-
-def calc_mrr(sim_score, acceptable_chunks, top_n=5):
-    ranks = []
-    for this_score, this_acceptable_chunks in zip(sim_score, acceptable_chunks):
-        indexes = reversed(np.argsort(this_score))
-        try:
-            rank = 1 + next(i for i, idx in enumerate(indexes) if idx in this_acceptable_chunks)
-        except StopIteration:
-            rank = len(this_score) + 1
-        
-        ranks.append(rank)
-        
-    return {
-        "mrr": sum(1 / r if r < top_n + 1 else 0 for r in ranks) / len(ranks),
-        "ranks": ranks,
-    }
-
 
 def calc_semantic_similarity(generated_answer: str, reference_answer: str) -> float:
     """
@@ -151,9 +184,7 @@ def calc_semantic_similarity(generated_answer: str, reference_answer: str) -> fl
     similarity = cosine_similarity(generated_embedding, reference_embedding)[0][0]
     return float(similarity)
 
-
 if __name__ == "__main__":
-    model_config = {"chunk_size": 512}
-    # run_evaluate_retrieval({"model": model_config})
-    run_evaluate_reply({"model": model_config})
-
+    # Pour exécuter toutes les améliorations
+    results = run_comprehensive_evaluation()
+    print(f"\nMeilleure configuration: {results.loc[results['mrr'].idxmax()]}")
