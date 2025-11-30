@@ -23,12 +23,18 @@ def get_model(config):
 
 
 class RAG:
-    def __init__(self, chunk_size=256):
+    def __init__(self, chunk_size=256, chunk_overlap=0, embedding_model='BAAI/bge-base-en-v1.5', use_small2big=False, small2big_ratio=2, top_k=5):
         self._chunk_size = chunk_size
+        self._chunk_overlap = chunk_overlap
+        self._embedding_model = embedding_model
+        self._use_small2big = use_small2big
+        self._small2big_ratio = small2big_ratio
+        self._top_k = top_k
         self._embedder = None
         self._loaded_files = set()
         self._texts = []
         self._chunks = []
+        self._chunk_metadata = []  # Store position info for small2big
         self._corpus_embedding = None
         self._client = CLIENT
 
@@ -65,10 +71,20 @@ class RAG:
         return embedder.encode(questions)
 
     def _compute_chunks(self, texts):
-        return sum(
-            (chunk_markdown(txt, chunk_size=self._chunk_size) for txt in texts),
-            [],
-        )
+        all_chunks = []
+        for txt in texts:
+            if self._use_small2big:
+                chunks, metadata = chunk_markdown_with_metadata(
+                    txt, 
+                    chunk_size=self._chunk_size, 
+                    chunk_overlap=self._chunk_overlap,
+                    large_chunk_size=self._chunk_size * self._small2big_ratio
+                )
+                self._chunk_metadata.extend(metadata)
+            else:
+                chunks = chunk_markdown(txt, chunk_size=self._chunk_size, chunk_overlap=self._chunk_overlap)
+            all_chunks.extend(chunks)
+        return all_chunks
 
     def embed_corpus(self, chunks):
         embedder = self.get_embedder()
@@ -76,11 +92,18 @@ class RAG:
 
     def get_embedder(self):
         if not self._embedder:
-            self._embedder = FlagModel(
-                'BAAI/bge-base-en-v1.5',
-                query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
-                use_fp16=True,
-            )
+            if self._embedding_model == 'sentence-transformers/all-MiniLM-L6-v2':
+                from sentence_transformers import SentenceTransformer
+                self._embedder = SentenceTransformer(self._embedding_model)
+            elif self._embedding_model == 'intfloat/multilingual-e5-large':
+                from sentence_transformers import SentenceTransformer
+                self._embedder = SentenceTransformer(self._embedding_model)
+            else:
+                self._embedder = FlagModel(
+                    self._embedding_model,
+                    query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
+                    use_fp16=True,
+                )
 
         return self._embedder
 
@@ -108,8 +131,13 @@ Answer:"""
     def _get_context(self, query):
         query_embedding = self.embed_questions([query])
         sim_scores = query_embedding @ self._corpus_embedding.T
-        indexes = list(np.argsort(sim_scores[0]))[-5:]
-        return [self._chunks[i] for i in indexes]
+        indexes = list(np.argsort(sim_scores[0]))[-self._top_k:]
+        
+        if self._use_small2big and self._chunk_metadata:
+            # Return large context for small chunks
+            return [self._chunk_metadata[i]['large_chunk'] for i in indexes]
+        else:
+            return [self._chunks[i] for i in indexes]
     
 
 
@@ -156,16 +184,56 @@ def parse_markdown_sections(md_text: str) -> list[dict[str, str]]:
     return sections
 
 
-def chunk_markdown(md_text: str, chunk_size: int = 128) -> list[dict]:
+def chunk_markdown(md_text: str, chunk_size: int = 128, chunk_overlap: int = 0) -> list[str]:
     parsed_sections = parse_markdown_sections(md_text)
     chunks = []
 
     for section in parsed_sections:
         tokens = tokenizer.encode(section["content"])
-        token_chunks = [tokens[i:i + chunk_size] for i in range(0, len(tokens), chunk_size) if tokens[i:i + chunk_size]]
+        step = chunk_size - chunk_overlap
+        if step <= 0:
+            step = chunk_size
+        
+        token_chunks = [tokens[i:i + chunk_size] for i in range(0, len(tokens), step) if tokens[i:i + chunk_size]]
 
         for token_chunk in token_chunks:
             chunk_text = tokenizer.decode(token_chunk)
             chunks.append(chunk_text)
 
     return chunks
+
+
+def chunk_markdown_with_metadata(md_text: str, chunk_size: int = 128, chunk_overlap: int = 0, large_chunk_size: int = 512) -> tuple[list[str], list[dict]]:
+    """Create small chunks for retrieval but keep large chunks for context."""
+    parsed_sections = parse_markdown_sections(md_text)
+    small_chunks = []
+    metadata = []
+
+    for section in parsed_sections:
+        tokens = tokenizer.encode(section["content"])
+        step = chunk_size - chunk_overlap
+        if step <= 0:
+            step = chunk_size
+        
+        # Create small chunks
+        for i in range(0, len(tokens), step):
+            small_token_chunk = tokens[i:i + chunk_size]
+            if not small_token_chunk:
+                continue
+                
+            small_chunk_text = tokenizer.decode(small_token_chunk)
+            
+            # Create corresponding large chunk
+            large_start = max(0, i - chunk_overlap)
+            large_end = min(len(tokens), i + large_chunk_size)
+            large_token_chunk = tokens[large_start:large_end]
+            large_chunk_text = tokenizer.decode(large_token_chunk)
+            
+            small_chunks.append(small_chunk_text)
+            metadata.append({
+                'small_chunk': small_chunk_text,
+                'large_chunk': large_chunk_text,
+                'position': i
+            })
+
+    return small_chunks, metadata
