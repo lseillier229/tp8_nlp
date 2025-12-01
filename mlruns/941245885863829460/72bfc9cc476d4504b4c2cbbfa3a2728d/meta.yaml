@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/72bfc9cc476d4504b4c2cbbfa3a2728d/artifacts
+end_time: 1764575187549
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 72bfc9cc476d4504b4c2cbbfa3a2728d
+run_name: omniscient-ram-845
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575187541
+status: 3
+tags: []
+user_id: ayouba

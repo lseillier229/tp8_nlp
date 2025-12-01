@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/2f81f278a33748e98af3d1e74ba4d34b/artifacts
+end_time: 1764621538842
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 2f81f278a33748e98af3d1e74ba4d34b
+run_name: glamorous-worm-876
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621538829
+status: 3
+tags: []
+user_id: ayouba

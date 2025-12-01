@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/76cc99e5ed9349eaa5422136f42146ec/artifacts
+end_time: 1764577337306
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 76cc99e5ed9349eaa5422136f42146ec
+run_name: bittersweet-mink-26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577337293
+status: 3
+tags: []
+user_id: ayouba

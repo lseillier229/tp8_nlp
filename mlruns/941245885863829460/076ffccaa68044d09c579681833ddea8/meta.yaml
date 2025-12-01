@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/076ffccaa68044d09c579681833ddea8/artifacts
+end_time: 1764622785255
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 076ffccaa68044d09c579681833ddea8
+run_name: delicate-frog-248
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622785240
+status: 3
+tags: []
+user_id: ayouba

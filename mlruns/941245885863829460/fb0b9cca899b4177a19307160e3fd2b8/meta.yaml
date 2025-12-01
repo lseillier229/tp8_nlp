@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/fb0b9cca899b4177a19307160e3fd2b8/artifacts
+end_time: 1764576888239
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: fb0b9cca899b4177a19307160e3fd2b8
+run_name: upbeat-ram-144
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576888226
+status: 3
+tags: []
+user_id: ayouba

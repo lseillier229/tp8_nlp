@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/ddc3f2cdb5c8409494b15a3313f8b954/artifacts
+end_time: 1764574950079
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: ddc3f2cdb5c8409494b15a3313f8b954
+run_name: efficient-doe-728
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574950066
+status: 3
+tags: []
+user_id: ayouba

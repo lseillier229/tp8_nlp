@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/aacb67af34094ff180c8686816e88955/artifacts
+end_time: 1764610534272
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: aacb67af34094ff180c8686816e88955
+run_name: vaunted-moth-852
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764610534258
+status: 3
+tags: []
+user_id: ayouba

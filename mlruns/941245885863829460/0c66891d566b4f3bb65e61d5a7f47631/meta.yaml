@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/0c66891d566b4f3bb65e61d5a7f47631/artifacts
+end_time: 1764622813345
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 0c66891d566b4f3bb65e61d5a7f47631
+run_name: fortunate-flea-136
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622813331
+status: 3
+tags: []
+user_id: ayouba

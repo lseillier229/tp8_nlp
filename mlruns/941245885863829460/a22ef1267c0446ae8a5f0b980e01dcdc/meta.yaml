@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/a22ef1267c0446ae8a5f0b980e01dcdc/artifacts
+end_time: 1764574771962
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: a22ef1267c0446ae8a5f0b980e01dcdc
+run_name: luminous-lamb-157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574771942
+status: 3
+tags: []
+user_id: ayouba

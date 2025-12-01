@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/e3506a8fa9744241a8f8f0a0a70ae358/artifacts
+end_time: 1764575754467
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: e3506a8fa9744241a8f8f0a0a70ae358
+run_name: popular-newt-181
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575754452
+status: 3
+tags: []
+user_id: ayouba

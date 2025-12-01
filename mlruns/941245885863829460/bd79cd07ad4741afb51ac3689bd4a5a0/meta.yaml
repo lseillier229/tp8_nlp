@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/bd79cd07ad4741afb51ac3689bd4a5a0/artifacts
+end_time: 1764621574233
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: bd79cd07ad4741afb51ac3689bd4a5a0
+run_name: hilarious-swan-618
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621574222
+status: 3
+tags: []
+user_id: ayouba

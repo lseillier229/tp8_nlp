@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/cab93c892d4f4b218927de542be1ee39/artifacts
+end_time: 1764620767970
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: cab93c892d4f4b218927de542be1ee39
+run_name: indecisive-bug-715
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764620767956
+status: 3
+tags: []
+user_id: ayouba

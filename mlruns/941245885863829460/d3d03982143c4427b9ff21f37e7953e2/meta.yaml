@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/d3d03982143c4427b9ff21f37e7953e2/artifacts
+end_time: 1764576729902
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: d3d03982143c4427b9ff21f37e7953e2
+run_name: luxuriant-koi-80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576729891
+status: 3
+tags: []
+user_id: ayouba

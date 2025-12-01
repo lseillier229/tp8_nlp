@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/c530266424ad4c6999ce2c2fe5e86477/artifacts
+end_time: 1764578225907
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: c530266424ad4c6999ce2c2fe5e86477
+run_name: kindly-sloth-720
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764578225894
+status: 3
+tags: []
+user_id: ayouba

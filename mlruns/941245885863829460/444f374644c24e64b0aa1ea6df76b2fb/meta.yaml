@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/444f374644c24e64b0aa1ea6df76b2fb/artifacts
+end_time: 1764621916925
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 444f374644c24e64b0aa1ea6df76b2fb
+run_name: flawless-squid-320
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621916914
+status: 3
+tags: []
+user_id: ayouba

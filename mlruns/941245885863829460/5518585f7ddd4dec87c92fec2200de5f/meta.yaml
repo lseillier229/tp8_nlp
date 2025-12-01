@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/5518585f7ddd4dec87c92fec2200de5f/artifacts
+end_time: 1764578091310
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 5518585f7ddd4dec87c92fec2200de5f
+run_name: merciful-bug-827
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764578091292
+status: 3
+tags: []
+user_id: ayouba

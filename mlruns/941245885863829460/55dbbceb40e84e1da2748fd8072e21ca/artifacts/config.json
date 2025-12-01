@@ -1,0 +1,8 @@
+{
+  "model": {
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "use_small2big": false
+  }
+}

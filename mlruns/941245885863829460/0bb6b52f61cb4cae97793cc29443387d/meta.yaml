@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/0bb6b52f61cb4cae97793cc29443387d/artifacts
+end_time: 1764622840946
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 0bb6b52f61cb4cae97793cc29443387d
+run_name: mysterious-finch-589
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622840934
+status: 3
+tags: []
+user_id: ayouba

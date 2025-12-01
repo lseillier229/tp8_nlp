@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/1cc1c2aaad4d4855a9f10e92efb5535e/artifacts
+end_time: 1764576516879
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 1cc1c2aaad4d4855a9f10e92efb5535e
+run_name: sneaky-crane-889
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576516867
+status: 3
+tags: []
+user_id: ayouba

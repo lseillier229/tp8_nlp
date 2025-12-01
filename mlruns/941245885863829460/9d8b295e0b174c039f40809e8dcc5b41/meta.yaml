@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/9d8b295e0b174c039f40809e8dcc5b41/artifacts
+end_time: 1764575000982
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 9d8b295e0b174c039f40809e8dcc5b41
+run_name: useful-pig-622
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575000972
+status: 3
+tags: []
+user_id: ayouba

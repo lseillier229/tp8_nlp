@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/b289a6d23bed4f0a891ca5b03f116839/artifacts
+end_time: 1764575173316
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: b289a6d23bed4f0a891ca5b03f116839
+run_name: popular-mouse-329
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575173302
+status: 3
+tags: []
+user_id: ayouba

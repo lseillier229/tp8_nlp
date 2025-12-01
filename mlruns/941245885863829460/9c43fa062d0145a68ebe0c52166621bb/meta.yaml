@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/9c43fa062d0145a68ebe0c52166621bb/artifacts
+end_time: 1764577569960
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 9c43fa062d0145a68ebe0c52166621bb
+run_name: abundant-duck-801
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577569951
+status: 3
+tags: []
+user_id: ayouba

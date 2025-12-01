@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/ce6c3fd5c001462782dcaa3ee44e257d/artifacts
+end_time: 1764621570728
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: ce6c3fd5c001462782dcaa3ee44e257d
+run_name: trusting-hog-436
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621570717
+status: 3
+tags: []
+user_id: ayouba

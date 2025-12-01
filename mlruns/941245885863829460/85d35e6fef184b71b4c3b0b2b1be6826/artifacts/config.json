@@ -1,0 +1,10 @@
+{
+  "model": {
+    "chunk_size": 256,
+    "chunk_overlap": 50,
+    "embedding_model": "BAAI/bge-large-en-v1.5",
+    "use_hybrid": true,
+    "use_reranking": true,
+    "reranker_model": "BAAI/bge-reranker-base"
+  }
+}

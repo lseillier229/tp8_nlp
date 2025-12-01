@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/3c60b54792654db4bb01be6e6ea2e66e/artifacts
+end_time: 1764622601733
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 3c60b54792654db4bb01be6e6ea2e66e
+run_name: melodic-fowl-679
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622601722
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/90d13496e7124a20b87b3d249c28254f/artifacts
+end_time: 1764574551947
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 90d13496e7124a20b87b3d249c28254f
+run_name: mercurial-seal-160
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574551937
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/418981e0b2a445f0ad0cc895679f303d/artifacts
+end_time: 1764622287827
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 418981e0b2a445f0ad0cc895679f303d
+run_name: luminous-wren-980
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622287817
+status: 3
+tags: []
+user_id: ayouba

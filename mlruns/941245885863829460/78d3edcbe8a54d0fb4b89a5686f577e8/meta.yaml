@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/78d3edcbe8a54d0fb4b89a5686f577e8/artifacts
+end_time: 1764574822360
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 78d3edcbe8a54d0fb4b89a5686f577e8
+run_name: agreeable-hawk-482
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574822351
+status: 3
+tags: []
+user_id: ayouba

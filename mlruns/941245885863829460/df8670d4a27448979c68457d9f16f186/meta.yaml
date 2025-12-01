@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/df8670d4a27448979c68457d9f16f186/artifacts
+end_time: 1764574620712
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: df8670d4a27448979c68457d9f16f186
+run_name: gifted-crow-661
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574620703
+status: 3
+tags: []
+user_id: ayouba

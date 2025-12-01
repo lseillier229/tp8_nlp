@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/614ed761d1f64eca951aeb6ed56f29de/artifacts
+end_time: 1764622750417
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 614ed761d1f64eca951aeb6ed56f29de
+run_name: clean-boar-333
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622750406
+status: 3
+tags: []
+user_id: ayouba

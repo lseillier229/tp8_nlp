@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/4f34105408c74683bbc2fc651233d929/artifacts
+end_time: 1764577995520
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 4f34105408c74683bbc2fc651233d929
+run_name: judicious-mole-83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577995506
+status: 3
+tags: []
+user_id: ayouba

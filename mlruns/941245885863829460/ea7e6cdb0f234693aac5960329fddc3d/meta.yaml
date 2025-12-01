@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/ea7e6cdb0f234693aac5960329fddc3d/artifacts
+end_time: 1764577948019
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: ea7e6cdb0f234693aac5960329fddc3d
+run_name: bold-asp-522
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577948003
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/5f29477910c24ebf97d97a07f301f762/artifacts
+end_time: 1764611230714
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 5f29477910c24ebf97d97a07f301f762
+run_name: resilient-rook-568
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764611230333
+status: 3
+tags: []
+user_id: ayouba

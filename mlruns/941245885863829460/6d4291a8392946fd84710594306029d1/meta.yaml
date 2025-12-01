@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/6d4291a8392946fd84710594306029d1/artifacts
+end_time: 1764622085866
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 6d4291a8392946fd84710594306029d1
+run_name: serious-newt-216
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622085846
+status: 3
+tags: []
+user_id: ayouba

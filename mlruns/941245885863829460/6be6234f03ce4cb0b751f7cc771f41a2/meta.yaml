@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/6be6234f03ce4cb0b751f7cc771f41a2/artifacts
+end_time: 1764621464329
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 6be6234f03ce4cb0b751f7cc771f41a2
+run_name: gaudy-crab-238
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621464317
+status: 3
+tags: []
+user_id: ayouba

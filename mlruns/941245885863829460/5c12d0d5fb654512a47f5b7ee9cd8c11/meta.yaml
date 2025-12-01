@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/5c12d0d5fb654512a47f5b7ee9cd8c11/artifacts
+end_time: 1764577775923
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 5c12d0d5fb654512a47f5b7ee9cd8c11
+run_name: classy-chimp-537
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577775914
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/7a80580059164a4bb52bc8a7f46e52b2/artifacts
+end_time: 1764575725968
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 7a80580059164a4bb52bc8a7f46e52b2
+run_name: smiling-mole-126
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575725955
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/b7ef95a59a6a421782237482db1b7dca/artifacts
+end_time: 1764574406968
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: b7ef95a59a6a421782237482db1b7dca
+run_name: serious-elk-717
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574406956
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/95fcc65c2b7f4fde96102cae521db33d/artifacts
+end_time: 1764620877902
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 95fcc65c2b7f4fde96102cae521db33d
+run_name: efficient-chimp-276
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764620877890
+status: 3
+tags: []
+user_id: ayouba

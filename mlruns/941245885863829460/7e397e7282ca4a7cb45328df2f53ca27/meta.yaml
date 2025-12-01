@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/7e397e7282ca4a7cb45328df2f53ca27/artifacts
+end_time: 1764574442012
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 7e397e7282ca4a7cb45328df2f53ca27
+run_name: delicate-mare-911
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574442002
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/24a228e7abf34fbe94a767394ce058eb/artifacts
+end_time: 1764622576847
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 24a228e7abf34fbe94a767394ce058eb
+run_name: charming-colt-695
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622576831
+status: 3
+tags: []
+user_id: ayouba

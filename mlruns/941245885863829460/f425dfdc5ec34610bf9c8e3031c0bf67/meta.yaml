@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/f425dfdc5ec34610bf9c8e3031c0bf67/artifacts
+end_time: 1764578046667
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: f425dfdc5ec34610bf9c8e3031c0bf67
+run_name: dazzling-shrike-298
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764578046653
+status: 3
+tags: []
+user_id: ayouba

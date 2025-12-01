@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/9ad396811f2947719ee1553c6a2f59b6/artifacts
+end_time: 1764620833089
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 9ad396811f2947719ee1553c6a2f59b6
+run_name: crawling-ape-125
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764620833074
+status: 3
+tags: []
+user_id: ayouba

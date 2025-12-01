@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/80b9d599aa1f43f690ad9f05c7b82498/artifacts
+end_time: 1764622747471
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 80b9d599aa1f43f690ad9f05c7b82498
+run_name: bittersweet-bird-597
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622747460
+status: 3
+tags: []
+user_id: ayouba

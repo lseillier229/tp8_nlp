@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/052767fdc7d04ac98cf2ec4e8d512fc4/artifacts
+end_time: 1764621726296
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 052767fdc7d04ac98cf2ec4e8d512fc4
+run_name: beautiful-sheep-592
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621726281
+status: 3
+tags: []
+user_id: ayouba

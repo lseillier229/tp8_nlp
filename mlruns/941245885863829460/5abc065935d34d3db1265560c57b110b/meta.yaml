@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/5abc065935d34d3db1265560c57b110b/artifacts
+end_time: 1764573960935
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 5abc065935d34d3db1265560c57b110b
+run_name: smiling-crow-293
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764573960925
+status: 3
+tags: []
+user_id: ayouba

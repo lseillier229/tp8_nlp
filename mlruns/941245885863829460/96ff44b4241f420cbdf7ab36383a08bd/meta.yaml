@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/96ff44b4241f420cbdf7ab36383a08bd/artifacts
+end_time: 1764577611555
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 96ff44b4241f420cbdf7ab36383a08bd
+run_name: beautiful-cub-855
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577611542
+status: 3
+tags: []
+user_id: ayouba

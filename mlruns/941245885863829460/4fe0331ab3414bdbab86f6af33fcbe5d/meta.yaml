@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/4fe0331ab3414bdbab86f6af33fcbe5d/artifacts
+end_time: 1764575042962
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 4fe0331ab3414bdbab86f6af33fcbe5d
+run_name: valuable-boar-104
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575042946
+status: 3
+tags: []
+user_id: ayouba

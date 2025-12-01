@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/f6d2cade1c7f4165b3987b91736a30a2/artifacts
+end_time: 1764577369361
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: f6d2cade1c7f4165b3987b91736a30a2
+run_name: zealous-wasp-265
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577369352
+status: 3
+tags: []
+user_id: ayouba

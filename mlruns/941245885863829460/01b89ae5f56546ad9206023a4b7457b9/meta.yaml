@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/01b89ae5f56546ad9206023a4b7457b9/artifacts
+end_time: 1764622092495
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 01b89ae5f56546ad9206023a4b7457b9
+run_name: mercurial-dog-453
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622092484
+status: 3
+tags: []
+user_id: ayouba

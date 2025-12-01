@@ -1,0 +1,1 @@
+{'chunk_size': 256, 'chunk_overlap': 100, 'embedding_model': 'sentence-transformers/all-MiniLM-L6-v2', 'use_small2big': True, 'small2big_ratio': 3}

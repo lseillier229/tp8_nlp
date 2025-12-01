@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/2d5343bab287422daaa2c187a478683a/artifacts
+end_time: 1764575696348
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 2d5343bab287422daaa2c187a478683a
+run_name: burly-trout-798
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575696334
+status: 3
+tags: []
+user_id: ayouba

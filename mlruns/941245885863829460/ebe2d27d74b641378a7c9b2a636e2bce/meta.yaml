@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/ebe2d27d74b641378a7c9b2a636e2bce/artifacts
+end_time: 1764576850916
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: ebe2d27d74b641378a7c9b2a636e2bce
+run_name: blushing-grub-87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576850905
+status: 3
+tags: []
+user_id: ayouba

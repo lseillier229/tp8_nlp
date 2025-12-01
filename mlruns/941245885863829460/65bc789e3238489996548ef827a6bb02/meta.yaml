@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/65bc789e3238489996548ef827a6bb02/artifacts
+end_time: 1764578188146
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 65bc789e3238489996548ef827a6bb02
+run_name: loud-bass-860
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764578188138
+status: 3
+tags: []
+user_id: ayouba

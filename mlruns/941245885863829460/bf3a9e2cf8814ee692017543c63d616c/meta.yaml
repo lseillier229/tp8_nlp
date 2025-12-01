@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/bf3a9e2cf8814ee692017543c63d616c/artifacts
+end_time: 1764578253760
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: bf3a9e2cf8814ee692017543c63d616c
+run_name: gifted-bird-793
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764578253749
+status: 3
+tags: []
+user_id: ayouba

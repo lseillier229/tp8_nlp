@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/387b279c29354fc0b4032438b00402de/artifacts
+end_time: 1764577790887
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 387b279c29354fc0b4032438b00402de
+run_name: glamorous-zebra-493
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577790878
+status: 3
+tags: []
+user_id: ayouba

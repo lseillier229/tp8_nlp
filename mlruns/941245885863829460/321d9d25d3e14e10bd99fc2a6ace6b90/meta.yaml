@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/321d9d25d3e14e10bd99fc2a6ace6b90/artifacts
+end_time: 1764575648995
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 321d9d25d3e14e10bd99fc2a6ace6b90
+run_name: tasteful-donkey-103
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575648983
+status: 3
+tags: []
+user_id: ayouba

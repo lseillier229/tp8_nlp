@@ -1,0 +1,7 @@
+{
+  "model": {
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "embedding_model": "BAAI/bge-base-en-v1.5"
+  }
+}

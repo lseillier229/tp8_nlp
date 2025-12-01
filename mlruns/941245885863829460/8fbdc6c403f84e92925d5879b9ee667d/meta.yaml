@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/8fbdc6c403f84e92925d5879b9ee667d/artifacts
+end_time: 1764575115182
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 8fbdc6c403f84e92925d5879b9ee667d
+run_name: amazing-owl-489
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575115169
+status: 3
+tags: []
+user_id: ayouba

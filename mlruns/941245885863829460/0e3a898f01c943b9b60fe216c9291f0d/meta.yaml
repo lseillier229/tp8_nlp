@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/0e3a898f01c943b9b60fe216c9291f0d/artifacts
+end_time: 1764621553362
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 0e3a898f01c943b9b60fe216c9291f0d
+run_name: caring-ray-184
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621553349
+status: 3
+tags: []
+user_id: ayouba

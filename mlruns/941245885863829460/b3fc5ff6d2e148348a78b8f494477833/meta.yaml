@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/b3fc5ff6d2e148348a78b8f494477833/artifacts
+end_time: 1764622203670
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: b3fc5ff6d2e148348a78b8f494477833
+run_name: placid-shark-47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622203653
+status: 3
+tags: []
+user_id: ayouba

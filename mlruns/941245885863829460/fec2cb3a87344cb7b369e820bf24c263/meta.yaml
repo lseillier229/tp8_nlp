@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/fec2cb3a87344cb7b369e820bf24c263/artifacts
+end_time: 1764576758126
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: fec2cb3a87344cb7b369e820bf24c263
+run_name: receptive-dog-996
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576758116
+status: 3
+tags: []
+user_id: ayouba

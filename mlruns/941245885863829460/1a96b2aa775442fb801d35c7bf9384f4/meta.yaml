@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/1a96b2aa775442fb801d35c7bf9384f4/artifacts
+end_time: 1764574791135
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 1a96b2aa775442fb801d35c7bf9384f4
+run_name: intelligent-moth-219
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574791122
+status: 3
+tags: []
+user_id: ayouba

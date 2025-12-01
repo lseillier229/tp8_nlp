@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/5bfd55726e4a463baeb4cb8fe32672c3/artifacts
+end_time: 1764609608287
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 5bfd55726e4a463baeb4cb8fe32672c3
+run_name: defiant-sponge-775
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764609608274
+status: 3
+tags: []
+user_id: ayouba

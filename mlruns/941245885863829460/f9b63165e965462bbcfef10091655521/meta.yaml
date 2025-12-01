@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/f9b63165e965462bbcfef10091655521/artifacts
+end_time: 1764574896779
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: f9b63165e965462bbcfef10091655521
+run_name: selective-goat-98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574896767
+status: 3
+tags: []
+user_id: ayouba

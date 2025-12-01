@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/32b18af96d0f4e87a686fd78426d71ba/artifacts
+end_time: 1764621433764
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 32b18af96d0f4e87a686fd78426d71ba
+run_name: skittish-mole-980
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621433753
+status: 3
+tags: []
+user_id: ayouba

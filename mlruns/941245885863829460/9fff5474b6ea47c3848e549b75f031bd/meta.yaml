@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/9fff5474b6ea47c3848e549b75f031bd/artifacts
+end_time: 1764622598920
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 9fff5474b6ea47c3848e549b75f031bd
+run_name: carefree-fly-417
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622598910
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/c9fb1fb8090246a0aeeb295ccc24c7ab/artifacts
+end_time: 1764575490723
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: c9fb1fb8090246a0aeeb295ccc24c7ab
+run_name: defiant-loon-221
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575490711
+status: 3
+tags: []
+user_id: ayouba

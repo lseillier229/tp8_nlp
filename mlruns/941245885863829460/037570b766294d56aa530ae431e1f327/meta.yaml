@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/037570b766294d56aa530ae431e1f327/artifacts
+end_time: 1764610181668
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 037570b766294d56aa530ae431e1f327
+run_name: traveling-wasp-151
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764610181654
+status: 3
+tags: []
+user_id: ayouba

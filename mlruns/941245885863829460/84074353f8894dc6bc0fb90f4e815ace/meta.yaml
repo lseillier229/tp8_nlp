@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/84074353f8894dc6bc0fb90f4e815ace/artifacts
+end_time: 1764577783342
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 84074353f8894dc6bc0fb90f4e815ace
+run_name: wistful-dove-628
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577783331
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/2a702b3d3a034916adaa36d483736652/artifacts
+end_time: 1764577129961
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 2a702b3d3a034916adaa36d483736652
+run_name: nosy-mouse-595
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577129951
+status: 3
+tags: []
+user_id: ayouba

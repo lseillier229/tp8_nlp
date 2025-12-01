@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/969b0661e66540d1990d426608f935fa/artifacts
+end_time: 1764622067257
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 969b0661e66540d1990d426608f935fa
+run_name: likeable-whale-810
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622067231
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/ade80e869cfd4df8a1bc452cc6673737/artifacts
+end_time: 1764575622343
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: ade80e869cfd4df8a1bc452cc6673737
+run_name: ambitious-seal-292
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575622332
+status: 3
+tags: []
+user_id: ayouba

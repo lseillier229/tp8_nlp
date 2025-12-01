@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/3cd6bea000194d6abd15ebf81c77a69b/artifacts
+end_time: 1764575154124
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 3cd6bea000194d6abd15ebf81c77a69b
+run_name: rare-eel-258
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575154109
+status: 3
+tags: []
+user_id: ayouba

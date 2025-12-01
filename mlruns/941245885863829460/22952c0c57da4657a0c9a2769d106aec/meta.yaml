@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/22952c0c57da4657a0c9a2769d106aec/artifacts
+end_time: 1764576779154
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 22952c0c57da4657a0c9a2769d106aec
+run_name: fun-wolf-400
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576779145
+status: 3
+tags: []
+user_id: ayouba

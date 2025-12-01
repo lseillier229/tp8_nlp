@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/6185d2645c9f40919a248a2e966a8562/artifacts
+end_time: 1764577146157
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 6185d2645c9f40919a248a2e966a8562
+run_name: dapper-donkey-513
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577146148
+status: 3
+tags: []
+user_id: ayouba

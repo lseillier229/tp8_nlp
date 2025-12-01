@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/3854329a4e884254a85aae0b6ec0155b/artifacts
+end_time: 1764621680167
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 3854329a4e884254a85aae0b6ec0155b
+run_name: unique-hen-49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621680154
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/efbfa50c1a20414c91946cc779db7448/artifacts
+end_time: 1764622639151
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: efbfa50c1a20414c91946cc779db7448
+run_name: painted-hen-128
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622639131
+status: 3
+tags: []
+user_id: ayouba

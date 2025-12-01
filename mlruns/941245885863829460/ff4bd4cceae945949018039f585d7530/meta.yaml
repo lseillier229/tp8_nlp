@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/ff4bd4cceae945949018039f585d7530/artifacts
+end_time: 1764621910716
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: ff4bd4cceae945949018039f585d7530
+run_name: luxuriant-lark-78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621910706
+status: 3
+tags: []
+user_id: ayouba

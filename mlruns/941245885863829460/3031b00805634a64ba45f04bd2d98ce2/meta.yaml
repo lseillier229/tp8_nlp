@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/3031b00805634a64ba45f04bd2d98ce2/artifacts
+end_time: 1764574987802
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 3031b00805634a64ba45f04bd2d98ce2
+run_name: likeable-rat-621
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574987791
+status: 3
+tags: []
+user_id: ayouba

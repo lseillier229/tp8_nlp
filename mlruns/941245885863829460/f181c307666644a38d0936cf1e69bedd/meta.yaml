@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/f181c307666644a38d0936cf1e69bedd/artifacts
+end_time: 1764575007100
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: f181c307666644a38d0936cf1e69bedd
+run_name: masked-hawk-296
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575007090
+status: 3
+tags: []
+user_id: ayouba

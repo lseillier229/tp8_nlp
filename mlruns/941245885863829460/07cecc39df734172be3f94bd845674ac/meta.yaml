@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/07cecc39df734172be3f94bd845674ac/artifacts
+end_time: 1764622336160
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 07cecc39df734172be3f94bd845674ac
+run_name: traveling-whale-193
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622336139
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/5e7d31848da04880ac4c73c5184b9a63/artifacts
+end_time: 1764573987841
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 5e7d31848da04880ac4c73c5184b9a63
+run_name: angry-moose-305
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764573987830
+status: 3
+tags: []
+user_id: ayouba

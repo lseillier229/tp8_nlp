@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/43df51de72d84a6dbcd173d4f11d3ad7/artifacts
+end_time: 1764573934375
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 43df51de72d84a6dbcd173d4f11d3ad7
+run_name: redolent-croc-708
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764573934364
+status: 3
+tags: []
+user_id: ayouba

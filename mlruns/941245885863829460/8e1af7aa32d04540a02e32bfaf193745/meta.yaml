@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/8e1af7aa32d04540a02e32bfaf193745/artifacts
+end_time: 1764622730549
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 8e1af7aa32d04540a02e32bfaf193745
+run_name: calm-loon-282
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622730533
+status: 3
+tags: []
+user_id: ayouba

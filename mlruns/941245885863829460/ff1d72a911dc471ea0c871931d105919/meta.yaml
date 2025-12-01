@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/ff1d72a911dc471ea0c871931d105919/artifacts
+end_time: 1764609989573
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: ff1d72a911dc471ea0c871931d105919
+run_name: exultant-penguin-57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764609989555
+status: 3
+tags: []
+user_id: ayouba

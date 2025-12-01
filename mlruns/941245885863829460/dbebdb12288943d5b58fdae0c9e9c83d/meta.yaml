@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/dbebdb12288943d5b58fdae0c9e9c83d/artifacts
+end_time: 1764578409924
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: dbebdb12288943d5b58fdae0c9e9c83d
+run_name: calm-gull-396
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764578409912
+status: 3
+tags: []
+user_id: ayouba

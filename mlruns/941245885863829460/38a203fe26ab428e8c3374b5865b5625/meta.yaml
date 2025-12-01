@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/38a203fe26ab428e8c3374b5865b5625/artifacts
+end_time: 1764622098690
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 38a203fe26ab428e8c3374b5865b5625
+run_name: selective-goose-328
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622098680
+status: 3
+tags: []
+user_id: ayouba

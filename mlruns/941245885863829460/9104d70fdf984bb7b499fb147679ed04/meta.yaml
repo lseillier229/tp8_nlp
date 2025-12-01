@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/9104d70fdf984bb7b499fb147679ed04/artifacts
+end_time: 1764574277620
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 9104d70fdf984bb7b499fb147679ed04
+run_name: merciful-gull-828
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574277611
+status: 3
+tags: []
+user_id: ayouba

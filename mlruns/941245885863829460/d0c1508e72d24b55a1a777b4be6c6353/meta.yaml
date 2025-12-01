@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/d0c1508e72d24b55a1a777b4be6c6353/artifacts
+end_time: 1764574243500
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: d0c1508e72d24b55a1a777b4be6c6353
+run_name: stately-whale-767
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574243490
+status: 3
+tags: []
+user_id: ayouba

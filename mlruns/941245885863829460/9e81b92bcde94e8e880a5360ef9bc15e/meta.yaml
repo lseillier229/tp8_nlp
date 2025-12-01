@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/9e81b92bcde94e8e880a5360ef9bc15e/artifacts
+end_time: 1764622589793
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 9e81b92bcde94e8e880a5360ef9bc15e
+run_name: stylish-carp-861
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622589782
+status: 3
+tags: []
+user_id: ayouba

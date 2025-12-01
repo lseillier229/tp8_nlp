@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/bc094adc8d504dd5b4c79dcd7f6ece12/artifacts
+end_time: 1764574606528
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: bc094adc8d504dd5b4c79dcd7f6ece12
+run_name: wistful-shad-24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574606519
+status: 3
+tags: []
+user_id: ayouba

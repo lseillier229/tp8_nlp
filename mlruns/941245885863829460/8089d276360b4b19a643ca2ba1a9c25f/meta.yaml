@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/8089d276360b4b19a643ca2ba1a9c25f/artifacts
+end_time: 1764576815927
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 8089d276360b4b19a643ca2ba1a9c25f
+run_name: victorious-crane-709
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576815916
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/56845a6dbdd74a4b94352042d1e34b7c/artifacts
+end_time: 1764621422574
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 56845a6dbdd74a4b94352042d1e34b7c
+run_name: salty-sloth-757
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621422562
+status: 3
+tags: []
+user_id: ayouba

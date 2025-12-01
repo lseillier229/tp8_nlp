@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/8a6b0d76669243e18046e038898fd50b/artifacts
+end_time: 1764609351111
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 8a6b0d76669243e18046e038898fd50b
+run_name: sassy-duck-416
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764609351096
+status: 3
+tags: []
+user_id: ayouba

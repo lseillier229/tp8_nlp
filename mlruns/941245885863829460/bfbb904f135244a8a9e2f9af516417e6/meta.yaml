@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/bfbb904f135244a8a9e2f9af516417e6/artifacts
+end_time: 1764609798509
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: bfbb904f135244a8a9e2f9af516417e6
+run_name: thoughtful-hare-108
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764609798497
+status: 3
+tags: []
+user_id: ayouba

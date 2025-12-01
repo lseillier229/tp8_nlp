@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/88bf1b83ddb64b41b91b51499fade15b/artifacts
+end_time: 1764577509255
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 88bf1b83ddb64b41b91b51499fade15b
+run_name: blushing-elk-961
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577509242
+status: 3
+tags: []
+user_id: ayouba

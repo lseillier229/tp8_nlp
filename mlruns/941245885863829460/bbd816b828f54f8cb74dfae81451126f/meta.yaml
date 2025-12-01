@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/bbd816b828f54f8cb74dfae81451126f/artifacts
+end_time: 1764621395881
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: bbd816b828f54f8cb74dfae81451126f
+run_name: dashing-hen-982
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621395869
+status: 3
+tags: []
+user_id: ayouba

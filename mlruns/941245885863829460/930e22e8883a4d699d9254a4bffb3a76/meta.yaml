@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/930e22e8883a4d699d9254a4bffb3a76/artifacts
+end_time: 1764609038617
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 930e22e8883a4d699d9254a4bffb3a76
+run_name: useful-shad-85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764609038604
+status: 3
+tags: []
+user_id: ayouba

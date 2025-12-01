@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/d313b413e65545c7b1ad6e2d039a65ca/artifacts
+end_time: 1764575635876
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: d313b413e65545c7b1ad6e2d039a65ca
+run_name: indecisive-gnat-728
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764575635864
+status: 3
+tags: []
+user_id: ayouba

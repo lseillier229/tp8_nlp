@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/74b3f51658d040dea2c51a2d36f67511/artifacts
+end_time: 1764577113750
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 74b3f51658d040dea2c51a2d36f67511
+run_name: adaptable-sow-148
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577113736
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/3e3ba2e3170f4cd4b0f35a8cc9db7cd1/artifacts
+end_time: 1764622095596
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 3e3ba2e3170f4cd4b0f35a8cc9db7cd1
+run_name: powerful-hawk-115
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622095585
+status: 3
+tags: []
+user_id: ayouba

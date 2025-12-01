@@ -1,0 +1,1 @@
+{'chunk_size': 1024, 'chunk_overlap': 0, 'embedding_model': 'BAAI/bge-base-en-v1.5', 'use_small2big': False}

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/b09968c484584e8f86979b4676100917/artifacts
+end_time: 1764576941814
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: b09968c484584e8f86979b4676100917
+run_name: resilient-sloth-190
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576941806
+status: 3
+tags: []
+user_id: ayouba

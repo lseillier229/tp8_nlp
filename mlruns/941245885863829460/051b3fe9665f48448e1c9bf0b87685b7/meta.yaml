@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/051b3fe9665f48448e1c9bf0b87685b7/artifacts
+end_time: 1764621869395
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 051b3fe9665f48448e1c9bf0b87685b7
+run_name: abrasive-moth-263
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621869378
+status: 3
+tags: []
+user_id: ayouba

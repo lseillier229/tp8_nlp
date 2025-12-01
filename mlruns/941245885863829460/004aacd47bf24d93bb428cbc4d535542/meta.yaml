@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/004aacd47bf24d93bb428cbc4d535542/artifacts
+end_time: 1764574708180
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 004aacd47bf24d93bb428cbc4d535542
+run_name: classy-pug-763
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574708166
+status: 3
+tags: []
+user_id: ayouba

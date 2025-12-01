@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/8733adf23d31479b88a54c02cf790f25/artifacts
+end_time: 1764574229800
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 8733adf23d31479b88a54c02cf790f25
+run_name: bustling-hawk-451
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574229790
+status: 3
+tags: []
+user_id: ayouba

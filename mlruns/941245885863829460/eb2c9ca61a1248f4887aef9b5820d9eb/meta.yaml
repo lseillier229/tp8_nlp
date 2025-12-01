@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/eb2c9ca61a1248f4887aef9b5820d9eb/artifacts
+end_time: 1764578325872
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: eb2c9ca61a1248f4887aef9b5820d9eb
+run_name: spiffy-seal-999
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764578325858
+status: 3
+tags: []
+user_id: ayouba

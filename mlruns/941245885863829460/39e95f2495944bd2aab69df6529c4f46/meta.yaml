@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/39e95f2495944bd2aab69df6529c4f46/artifacts
+end_time: 1764576918990
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 39e95f2495944bd2aab69df6529c4f46
+run_name: aged-croc-137
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764576918979
+status: 3
+tags: []
+user_id: ayouba

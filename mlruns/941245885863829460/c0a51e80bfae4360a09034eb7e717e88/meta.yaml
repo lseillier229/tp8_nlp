@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/c0a51e80bfae4360a09034eb7e717e88/artifacts
+end_time: 1764620797267
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: c0a51e80bfae4360a09034eb7e717e88
+run_name: masked-fowl-93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764620797254
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/e95d406df6644974b17c65c694a65779/artifacts
+end_time: 1764574828435
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: e95d406df6644974b17c65c694a65779
+run_name: bright-dog-473
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764574828426
+status: 3
+tags: []
+user_id: ayouba

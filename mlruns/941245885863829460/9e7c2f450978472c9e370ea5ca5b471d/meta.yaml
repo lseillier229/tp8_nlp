@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/9e7c2f450978472c9e370ea5ca5b471d/artifacts
+end_time: 1764622456657
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 9e7c2f450978472c9e370ea5ca5b471d
+run_name: funny-pug-598
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764622456645
+status: 3
+tags: []
+user_id: ayouba

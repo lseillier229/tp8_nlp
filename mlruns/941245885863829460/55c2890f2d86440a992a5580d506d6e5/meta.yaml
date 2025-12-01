@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/55c2890f2d86440a992a5580d506d6e5/artifacts
+end_time: 1764577696085
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: 55c2890f2d86440a992a5580d506d6e5
+run_name: bemused-cub-901
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764577696072
+status: 3
+tags: []
+user_id: ayouba

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/dc1f941e014642cabf6a97ae39afa1b7/artifacts
+end_time: 1764621426669
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: dc1f941e014642cabf6a97ae39afa1b7
+run_name: handsome-trout-637
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764621426657
+status: 3
+tags: []
+user_id: ayouba

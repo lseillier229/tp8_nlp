@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ayouba/Documents/ESGI/Master2/nlp/tp8_nlp/mlruns/941245885863829460/f557aa69e703469dbd1ee734dd912063/artifacts
+end_time: 1764611070050
+entry_point_name: ''
+experiment_id: '941245885863829460'
+lifecycle_stage: active
+run_id: f557aa69e703469dbd1ee734dd912063
+run_name: bright-snail-971
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764611070037
+status: 3
+tags: []
+user_id: ayouba
