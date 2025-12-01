@@ -23,8 +23,10 @@ def get_model(config):
 
 
 class RAG:
-    def __init__(self, chunk_size=256):
+    def __init__(self, chunk_size=768, chunk_overlap=50, top_k=12):
         self._chunk_size = chunk_size
+        self._chunk_overlap = chunk_overlap
+        self._top_k = top_k
         self._embedder = None
         self._loaded_files = set()
         self._texts = []
@@ -66,7 +68,11 @@ class RAG:
 
     def _compute_chunks(self, texts):
         return sum(
-            (chunk_markdown(txt, chunk_size=self._chunk_size) for txt in texts),
+            (chunk_markdown(
+                txt, 
+                chunk_size=self._chunk_size,
+                chunk_overlap=self._chunk_overlap,
+            ) for txt in texts),
             [],
         )
 
@@ -108,7 +114,7 @@ Answer:"""
     def _get_context(self, query):
         query_embedding = self.embed_questions([query])
         sim_scores = query_embedding @ self._corpus_embedding.T
-        indexes = list(np.argsort(sim_scores[0]))[-5:]
+        indexes = list(np.argsort(sim_scores[0]))[-self._top_k:]
         return [self._chunks[i] for i in indexes]
     
 
@@ -156,16 +162,36 @@ def parse_markdown_sections(md_text: str) -> list[dict[str, str]]:
     return sections
 
 
-def chunk_markdown(md_text: str, chunk_size: int = 128) -> list[dict]:
+def chunk_markdown(md_text: str, chunk_size: int = 512, chunk_overlap: int = 100) -> list[str]:
+    """
+    Découpe le markdown en chunks avec overlap et headers inclus
+    """
     parsed_sections = parse_markdown_sections(md_text)
     chunks = []
 
     for section in parsed_sections:
-        tokens = tokenizer.encode(section["content"])
-        token_chunks = [tokens[i:i + chunk_size] for i in range(0, len(tokens), chunk_size) if tokens[i:i + chunk_size]]
-
-        for token_chunk in token_chunks:
+        # Inclure les headers pour le contexte
+        header_text = " > ".join(section["headers"]) + "\n\n" if section["headers"] else ""
+        full_text = header_text + section["content"]
+        
+        tokens = tokenizer.encode(full_text)
+        
+        # Ajouter un overlap entre les chunks
+        if chunk_overlap >= chunk_size:
+            chunk_overlap = chunk_size // 2
+        
+        step = chunk_size - chunk_overlap
+        
+        for i in range(0, len(tokens), step):
+            token_chunk = tokens[i:i + chunk_size]
+            if len(token_chunk) < 50:  # Ignorer les chunks trop petits
+                continue
+                
             chunk_text = tokenizer.decode(token_chunk)
             chunks.append(chunk_text)
+            
+            # Si c'est le dernier chunk complet, on arrête
+            if i + chunk_size >= len(tokens):
+                break
 
     return chunks
