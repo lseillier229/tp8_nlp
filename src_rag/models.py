@@ -3,6 +3,13 @@ import re
 import tiktoken
 import openai
 import yaml
+import nltk
+
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+    nltk.download('punkt_tab')
 
 from FlagEmbedding import FlagModel
 
@@ -189,16 +196,45 @@ def chunk_markdown(md_text: str, chunk_size: int = 128, chunk_overlap: int = 0) 
     chunks = []
 
     for section in parsed_sections:
-        tokens = tokenizer.encode(section["content"])
-        step = chunk_size - chunk_overlap
-        if step <= 0:
-            step = chunk_size
+        header_context = " > ".join(section["headers"])
+        if header_context:
+            header_context += "\n"
         
-        token_chunks = [tokens[i:i + chunk_size] for i in range(0, len(tokens), step) if tokens[i:i + chunk_size]]
-
-        for token_chunk in token_chunks:
-            chunk_text = tokenizer.decode(token_chunk)
-            chunks.append(chunk_text)
+        content = section["content"]
+        sentences = nltk.sent_tokenize(content)
+        
+        current_chunk_sentences = []
+        current_chunk_tokens = len(tokenizer.encode(header_context))
+        
+        i = 0
+        while i < len(sentences):
+            sentence = sentences[i]
+            sent_tokens = len(tokenizer.encode(sentence))
+            
+            if current_chunk_sentences and (current_chunk_tokens + sent_tokens > chunk_size):
+                chunks.append(header_context + " ".join(current_chunk_sentences))
+                
+                overlap_tokens = 0
+                new_chunk_sentences = []
+                back_idx = i - 1
+                while back_idx >= 0:
+                    prev_sent = sentences[back_idx]
+                    prev_tokens = len(tokenizer.encode(prev_sent))
+                    if overlap_tokens + prev_tokens > chunk_overlap:
+                        break
+                    new_chunk_sentences.insert(0, prev_sent)
+                    overlap_tokens += prev_tokens
+                    back_idx -= 1
+                
+                current_chunk_sentences = new_chunk_sentences
+                current_chunk_tokens = len(tokenizer.encode(header_context)) + overlap_tokens
+            
+            current_chunk_sentences.append(sentence)
+            current_chunk_tokens += sent_tokens
+            i += 1
+            
+        if current_chunk_sentences:
+            chunks.append(header_context + " ".join(current_chunk_sentences))
 
     return chunks
 
@@ -210,30 +246,79 @@ def chunk_markdown_with_metadata(md_text: str, chunk_size: int = 128, chunk_over
     metadata = []
 
     for section in parsed_sections:
-        tokens = tokenizer.encode(section["content"])
-        step = chunk_size - chunk_overlap
-        if step <= 0:
-            step = chunk_size
+        header_context = " > ".join(section["headers"])
+        if header_context:
+            header_context += "\n"
         
-        # Create small chunks
-        for i in range(0, len(tokens), step):
-            small_token_chunk = tokens[i:i + chunk_size]
-            if not small_token_chunk:
-                continue
+        content = section["content"]
+        sentences = nltk.sent_tokenize(content)
+        
+        chunk_indices = []
+        current_start = 0
+        current_tokens = len(tokenizer.encode(header_context))
+        
+        i = 0
+        while i < len(sentences):
+            sentence = sentences[i]
+            sent_tokens = len(tokenizer.encode(sentence))
+            
+            if i > current_start and (current_tokens + sent_tokens > chunk_size):
+                chunk_indices.append((current_start, i))
                 
-            small_chunk_text = tokenizer.decode(small_token_chunk)
+                overlap_tokens = 0
+                back_idx = i - 1
+                while back_idx >= current_start:
+                    prev_sent = sentences[back_idx]
+                    prev_tokens = len(tokenizer.encode(prev_sent))
+                    if overlap_tokens + prev_tokens > chunk_overlap:
+                        break
+                    overlap_tokens += prev_tokens
+                    back_idx -= 1
+                
+                current_start = back_idx + 1
+                current_tokens = len(tokenizer.encode(header_context))
+                for k in range(current_start, i):
+                    current_tokens += len(tokenizer.encode(sentences[k]))
             
-            # Create corresponding large chunk
-            large_start = max(0, i - chunk_overlap)
-            large_end = min(len(tokens), i + large_chunk_size)
-            large_token_chunk = tokens[large_start:large_end]
-            large_chunk_text = tokenizer.decode(large_token_chunk)
+            current_tokens += sent_tokens
+            i += 1
             
-            small_chunks.append(small_chunk_text)
+        if i > current_start:
+            chunk_indices.append((current_start, i))
+            
+        for start, end in chunk_indices:
+            small_text = header_context + " ".join(sentences[start:end])
+            small_chunks.append(small_text)
+            
+            large_tokens = len(tokenizer.encode(small_text))
+            l_start = start
+            l_end = end
+            
+            expanded = True
+            while expanded and large_tokens < large_chunk_size:
+                expanded = False
+                if l_start > 0:
+                    prev_sent = sentences[l_start - 1]
+                    t = len(tokenizer.encode(prev_sent))
+                    if large_tokens + t <= large_chunk_size:
+                        l_start -= 1
+                        large_tokens += t
+                        expanded = True
+                
+                if l_end < len(sentences):
+                    next_sent = sentences[l_end]
+                    t = len(tokenizer.encode(next_sent))
+                    if large_tokens + t <= large_chunk_size:
+                        l_end += 1
+                        large_tokens += t
+                        expanded = True
+            
+            large_text = header_context + " ".join(sentences[l_start:l_end])
+            
             metadata.append({
-                'small_chunk': small_chunk_text,
-                'large_chunk': large_chunk_text,
-                'position': i
+                'small_chunk': small_text,
+                'large_chunk': large_text,
+                'position': start
             })
 
     return small_chunks, metadata
